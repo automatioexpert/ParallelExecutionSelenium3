@@ -4,13 +4,14 @@
   <test thread-count="5" parallel="tests" name="Chrome Test(failed)">
     <parameter name="browser" value="chrome"/>
     <classes>
-      <class name="tests.SampleTest">
+      <class name="tests.LoginTest">
         <methods>
+          <include name="classSetUp"/>
           <include name="setUp"/>
-          <include name="tearDown"/>
           <include name="loginTest"/>
+          <include name="tearDown"/>
         </methods>
-      </class> <!-- tests.SampleTest -->
+      </class> <!-- tests.LoginTest -->
     </classes>
   </test> <!-- Chrome Test(failed) -->
 </suite> <!-- Failed suite [Parallel Test Suite] -->
